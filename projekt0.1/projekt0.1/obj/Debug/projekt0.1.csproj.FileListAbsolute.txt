@@ -41,6 +41,7 @@ D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\n
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\System.Web.WebPages.Razor.dll
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\WebGrease.dll
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\Newtonsoft.Json.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\System.Web.Helpers.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\System.Web.Mvc.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\System.Web.Optimization.xml
@@ -49,7 +50,6 @@ D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\n
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\System.Web.WebPages.Deployment.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\System.Web.WebPages.Razor.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\Antlr3.Runtime.pdb
-D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\Newtonsoft.Json.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\EntityFramework.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\EntityFramework.SqlServer.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\Microsoft.AspNet.Identity.Core.xml
@@ -64,6 +64,6 @@ D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\n
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\Microsoft.Owin.Security.Google.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\Microsoft.Owin.Security.Twitter.xml
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\obj\Debug\projekt0.1.csprojResolveAssemblyReference.cache
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\obj\Debug\projekt0.1.dll
 D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\obj\Debug\projekt0.1.pdb
+D:\podatci\Moje stvari\FAKS\FESB\Diplomski\1 semestar\NAPREDNE WEB TEHNOLOGIJE\nwt_projekt\projekt0.1\projekt0.1\obj\Debug\projekt0.1.csprojResolveAssemblyReference.cache

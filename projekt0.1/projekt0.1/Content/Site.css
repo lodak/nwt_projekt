@@ -22,3 +22,41 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.kalk1textmarginleft {
+
+    margin-left:650px;
+     margin-top:20px;
+     height:75px;
+}
+.botunmargina {
+    margin-right:20px;
+}
+.center {
+    margin: auto;
+    
+    padding: 10px;
+}
+
+.tecajnaFilterWrapper{
+    margin-top:50px;
+    margin-left:400px;
+}
+.tablica2{
+    display: table;
+    margin-left:350px;
+    color: blue;
+    line-height: 25px;
+    text-align: left;
+}
+table, th, td {
+   
+   border: 2px solid black;
+   border-collapse:separate;
+   
+}
+th, td {
+
+    padding-left:5px;
+   padding-right:5px;
+}

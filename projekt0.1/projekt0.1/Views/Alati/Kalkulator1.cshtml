@@ -1,0 +1,139 @@
+﻿
+@{
+    ViewBag.Title = "Kalkulator1";
+    Layout = "~/Views/Shared/_AlatiPartial.cshtml";
+}
+
+@Styles.Render("~/Content/Site.css")
+
+<div col-lg-2>
+    <div class="naslovi">
+        <h2>Kalkulator za izračun neto i bruto iznosa plaće</h2>
+    </div>
+    <div class="center">
+        <div class=" kalk1textmarginleft ">
+            <p>ovdje ide tekst</p>
+        </div>
+        <div class="kalk1 kalk1textmarginleft ">
+            <strong>Iznos</strong>
+            <div class="input-group">
+                <span class="input-group-addon " id="basic-addon1"></span>
+                <input type="text" class="form-control " placeholder="Iznos" aria-describedby="basic-addon1">
+            </div>
+
+        </div>
+        <div class=" kalk1textmarginleft">
+            <strong>Mjesto prebivališta</strong> (prirez)
+            <div>
+                <select name="location" id="form_salarycalculator_location"><option value="0" selected="selected">(bez prireza)</option><option value="1">Andrijaševci (8.00%)</option>
+                <option value="303">Antunovac (5.00%)</option><option value="309">Babina Greda (5.00%)</option><option value="2">Bale (1.00%)</option>
+                <option value="3">Barban (5.00%)</option><option value="4">Bedenica (3.00%)</option><option value="5">Bednja (10.00%)</option>
+                <option value="6">Beli Manastir (5.00%)</option><option value="7">Belica (1.00%)</option><option value="8">Belišće (10.00%)</option>
+                <option value="9">Benkovac (5.00%)</option><option value="10">Beretinec (7.00%)</option><option value="11">Bilice (10.00%)</option>
+                <option value="12">Bilje (5.00%)</option><option value="316">Biograd na moru (12.00%)</option><option value="13">Biskupija (4.00%)</option>
+                <option value="14">Bistra (10.00%)</option><option value="15">Bizovac (3.00%)</option><option value="16">Bjelovar (12.00%)</option>
+                <option value="17">Blato (10.00%)</option><option value="18">Bol (10.00%)</option><option value="19">Borovo (10.00%)</option>
+                <option value="20">Bošnjaci (5.00%)</option><option value="21">Brckovaljni (3.00%)</option><option value="22">Brdovec (10.00%)</option>
+                <option value="23">Brela (5.00%)</option><option value="24">Brestovac (5.00%)</option><option value="25">Breznica (10.00%)</option>
+                <option value="279">Breznički Hum (3.00%)</option><option value="26">Brinje (10.00%)</option><option value="27">Brodski Stupnik (10.00%)</option>
+                <option value="28">Buje (6.00%)</option><option value="29">Bukovlje (5.00%)</option><option value="317">Buzet (6.00%)</option>
+                <option value="37">Čabar (5.00%)</option><option value="38">Čaglin (5.00%)</option><option value="39">Čakovec (10.00%)</option>
+                <option value="40">Čazma (10.00%)</option><option value="41">Čeminac (3.00%)</option><option value="295">Čepin (10.00%)</option>
+                <option value="30">Cerna (5.00%)</option><option value="31">Cernik (10.00%)</option><option value="32">Cerovlje (2.00%)</option>
+                <option value="33">Cestica (10.00%)</option><option value="34">Cista Provo (3.00%)</option><option value="282">Civljane (5.00%)</option>
+                <option value="36">Crikvenica (10.00%)</option><option value="42">Darda (5.00%)</option><option value="304">Daruvar (10.00%)</option>
+                <option value="43">Davor (10.00%)</option><option value="44">Delnice (5.00%)</option><option value="45">Dežanovac (5.00%)</option>
+                <option value="46">Dicmo (8.00%)</option><option value="318">Donja Stubica (10.00%)</option><option value="47">Donja Voća (10.00%)</option>
+                <option value="48">Donji Andrijevci (8.00%)</option><option value="310">Donji Kukuruzari (6.00%)</option><option value="49">Donji Lapac (5.00%)</option>
+                <option value="50">Donji Martijanec (5.00%)</option><option value="51">Donji Miholjac (8.00%)</option><option value="52">Dragalić (10.00%)</option>
+                <option value="53">Draž (2.00%)</option><option value="54">Drenovci (5.00%)</option><option value="55">Drniš (5.00%)</option>
+                <option value="284">Dubrava (6.00%)</option><option value="57">Dubravica (7.00%)</option><option value="311">Dubrovačko primorje (10.00%)</option>
+                <option value="58">Dubrovnik (10.00%)</option><option value="59">Duga Resa (10.00%)</option><option value="61">Dugo Selo (9.00%)</option>
+                <option value="60">Dugopolje (8.00%)</option><option value="62">Dvor (5.00%)</option><option value="63">Đakovo (10.00%)</option><option value="64">Đurđenovac (10.00%)</option>
+                <option value="312">Đurmanec (10.00%)</option><option value="65">Erdut (1.00%)</option><option value="66">Ervenik (3.00%)</option><option value="67">Farkaševac (3.00%)</option>
+                <option value="68">Fažana (3.00%)</option><option value="69">Fužine (5.00%)</option><option value="72">Garčin (10.00%)</option><option value="70">Garešnica (10.00%)</option>
+                <option value="73">Gornji Bogićevci (5.00%)</option><option value="286">Gornji Kneginec (10.00%)</option><option value="293">Gospić (10.00%)</option><option value="71">Gračac (7.00%)</option>
+                <option value="75">Gračišće (5.00%)</option><option value="74">Gradec (5.00%)</option><option value="76">Grubišno polje (10.00%)</option><option value="287">Hrašćina (5.00%)</option>
+                <option value="77">Hrvace (10.00%)</option><option value="78">Hrvatska Kostajnica (6.00%)</option><option value="79">Hum na Sutli (5.00%)</option><option value="80">Ilok (10.00%)</option>
+                <option value="81">Imotski (12.00%)</option><option value="82">Ivanec (10.00%)</option><option value="83">Ivanić Grad (6.00%)</option><option value="84">Ivankovo (10.00%)</option>
+                <option value="85">Jagodnjak (3.00%)</option><option value="86">Jakovlje (5.00%)</option><option value="87">Jakšić (5.00%)</option><option value="88">Jastrebarsko (9.00%)</option>
+                <option value="89">Jelsa (10.00%)</option><option value="283">Kamanje (10.00%)</option><option value="91">Kanfanar (5.00%)</option><option value="92">Kapela (8.00%)</option>
+                <option value="93">Kaptol (10.00%)</option><option value="94">Karlovac (14.00%)</option><option value="95">Karojba (5.00%)</option><option value="277">Kaštel - Labinci (5.00%)</option>
+                <option value="96">Kaštela (12.00%)</option><option value="288">Kaštelir-Labinci-Castelliere-S.Domenica  (5.00%)</option><option value="98">Kijevo (5.00%)</option>
+                <option value="99">Kistanje (3.00%)</option><option value="100">Klanjec (12.00%)</option><option value="101">Klenovnik (7.00%)</option><option value="102">Klinča Selo (10.00%)</option>
+                <option value="313">Klis (10.00%)</option><option value="103">Kloštar Ivanić (2.00%)</option><option value="308">Kloštar Podravski (5.00%)</option>
+                <option value="104">Kneževi Vinogradi (5.00%)</option><option value="105">Knin (10.00%)</option><option value="319">Komiža (5.00%)</option>
+                <option value="106">Konavle (10.00%)</option><option value="107">Končanica (5.00%)</option><option value="108">Konjščina (10.00%)</option>
+                <option value="109">Korčula (6.00%)</option><option value="110">Kostajnica (6.00%)</option><option value="111">Kraljevica (5.00%)</option><option value="112">Krašić (6.00%)</option>
+                <option value="113">Kravarsko (5.00%)</option><option value="114">Križ (2.00%)</option><option value="115">Križevci (10.00%)</option><option value="116">Krnjak (8.00%)</option>
+                <option value="117">Kutina (10.00%)</option><option value="118">Labin (6.00%)</option><option value="119">Lanišće (1.00%)</option><option value="306">Lasinja (10.00%)</option>
+                <option value="120">Lastovo (3.00%)</option><option value="121">Lepoglava (8.00%)</option><option value="122">Lipovljani (6.00%)</option><option value="123">Ližnjan (5.00%)</option>
+                <option value="289">Ljubešćica (10.00%)</option><option value="124">Lokvičići (7.00%)</option><option value="125">Lovas (5.00%)</option><option value="126">Lovinac (8.00%)</option>
+                <option value="127">Lovreč (1.00%)</option><option value="128">Ludbreg (8.00%)</option><option value="129">Luka (5.00%)</option><option value="298">Lukač (8.00%)</option>
+                <option value="130">Lumbarda (5.00%)</option><option value="131">Lupoglav (1.00%)</option><option value="132">Magadenovac (2.00%)</option><option value="133">Makarska (10.00%)</option>
+                <option value="134">Mali Bukovac (5.00%)</option><option value="135">Marčana (5.00%)</option><option value="136">Marija Gorica (10.00%)</option><option value="137">Marijanci (5.00%)</option>
+                <option value="138">Markušica (5.00%)</option><option value="297">Maruševec (5.00%)</option><option value="139">Medulin (5.00%)</option><option value="140">Metković (10.00%)</option>
+                <option value="141">Milna (2.00%)</option><option value="142">Mljet (10.00%)</option><option value="143">Motovun (1.00%)</option><option value="144">Mrkopalj (5.00%)</option>
+                <option value="145">Muć (7.00%)</option><option value="146">Murter (6.00%)</option><option value="147">Našice (8.00%)</option><option value="148">Negoslavci (5.00%)</option>
+                <option value="149">Nova Gradiška (12.00%)</option><option value="150">Nova Kapela (10.00%)</option><option value="151">Novi Marof (10.00%)</option>
+                <option value="152">Novi Vinodolski (7.00%)</option><option value="153">Novska (10.00%)</option><option value="154">Nuštar (6.00%)</option><option value="320">Ogulin (10.00%)</option>
+                <option value="314">Okučani (10.00%)</option><option value="155">Omiš (8.00%)</option><option value="156">Opatija (7.50%)</option><option value="159">Općina Gračac (7.00%)</option>
+                <option value="158">Općina Gracin (10.00%)</option><option value="157">Općina Špišić Bukovica (9.00%)</option><option value="278">Opuzen (10.00%)</option>
+                <option value="161">Orle (5.00%)</option><option value="162">Osijek (13.00%)</option><option value="163">Otočac (9.00%)</option><option value="165">Otok (10.00%)</option>
+                <option value="166">Ozalj (12.00%)</option><option value="307">Pakrac (10.00%)</option><option value="167">Pazin (9.00%)</option><option value="305">Perušić (8.00%)</option>
+                <option value="168">Petlovac (5.00%)</option><option value="292">Petrijanec (5.00%)</option><option value="169">Petrijevci (5.00%)</option><option value="170">Petrinja (10.00%)</option>
+                <option value="171">Pićan (2.00%)</option><option value="172">Pirovac (6.00%)</option><option value="173">Pisarovina (6.00%)</option><option value="174">Pleternica (10.00%)</option>
+                <option value="175">Plitvička jezera (5.00%)</option><option value="176">Podbablje (6.00%)</option><option value="177">Podcrkavlje (5.00%)</option><option value="178">Podgora (10.00%)</option>
+                <option value="179">Podstrana (8.00%)</option><option value="180">Pokupsko (5.00%)</option><option value="181">Popovac (3.00%)</option><option value="182">Popovača (6.00%)</option>
+                <option value="183">Požega (10.00%)</option><option value="184">Pregrada (10.00%)</option><option value="185">Preseka (5.00%)</option><option value="186">Primošten (10.00%)</option>
+                <option value="187">Proložac (5.00%)</option><option value="188">Promina (5.00%)</option><option value="189">Pučišća (5.00%)</option><option value="190">Pula (12.00%)</option>
+                <option value="191">Pušća (10.00%)</option><option value="192">Rakovec (3.00%)</option><option value="193">Rakovica (8.00%)</option><option value="194">Raša (6.00%)</option>
+                <option value="195">Ravna Gora (7.50%)</option><option value="196">Rešetari (10.00%)</option><option value="197">Ribnik (5.00%)</option><option value="285">Rijeka (15.00%)</option>
+                <option value="199">Rovinj (6.00%)</option><option value="200">Rugvica (6.00%)</option><option value="201">Runovići (6.00%)</option><option value="202">Ružić (5.00%)</option>
+                <option value="321">Senj (10.00%)</option><option value="222">Šibenik (10.00%)</option><option value="203">Sibinj (10.00%)</option><option value="204">Sinj (8.00%)</option>
+                <option value="205">Sisak (10.00%)</option><option value="301">Škabrnja (10.00%)</option><option value="206">Skradin (5.00%)</option><option value="281">Slatina (6.00%)</option>
+                <option value="207">Slavonski Brod (12.00%)</option><option value="208">Slunj (5.00%)</option><option value="209">Solin (10.00%)</option><option value="223">Špišić Bukovica (9.00%)</option>
+                <option value="210">Split (10.00%)</option><option value="211">Sračinec (5.00%)</option><option value="212">Stara Gradiška (5.00%)</option><option value="213">Stari Mikanovci (10.00%)</option>
+                <option value="214">Staro Petrovo Selo (10.00%)</option><option value="224">Štitar (10.00%)</option><option value="215">Stupnik (6.00%)</option><option value="216">Sutivan (10.00%)</option>
+                <option value="299">Sveta Nedelja (Labin) (6.00%)</option><option value="290">Sveta Nedjelja (Samoborska) (6.00%)</option><option value="217">Sveti Đurđ (5.00%)</option>
+                <option value="315">Sveti Filip i Jakov (10.00%)</option><option value="300">Sveti Ilija (10.00%)</option><option value="219">Sveti Ivan Zelina (12.00%)</option>
+                <option value="302">Sveti Lovreč (5.00%)</option><option value="220">Sveti Petar u šumi (7.00%)</option><option value="221">Svetvinčenat (5.00%)</option>
+                <option value="225">Tinjan (5.00%)</option><option value="226">Tisno (9.00%)</option><option value="227">Tordinci (5.00%)</option><option value="228">Tribunj (6.00%)</option>
+                <option value="229">Trnovec Bartolovečki (3.00%)</option><option value="230">Trogir (8.00%)</option><option value="231">Trpanj (10.00%)</option><option value="232">Tučepi (10.00%)</option>
+                <option value="233">Udbina (5.00%)</option><option value="234">Umag (6.00%)</option><option value="235">Unešić (5.00%)</option><option value="236">Valpovo (8.00%)</option>
+                <option value="237">Varaždin (10.00%)</option><option value="238">Varaždinske Toplice (10.00%)</option><option value="239">Vela Luka (9.00%)</option><option value="240">Velika Gorica (12.00%)</option>
+                <option value="241">Velika Kopanica (7.00%)</option><option value="242">Veliki Bukovec (5.00%)</option><option value="243">Veliko Trgovišće (7.50%)</option><option value="244">Vidovec (10.00%)</option>
+                <option value="246">Vinica (5.00%)</option><option value="245">Vinkovci (13.00%)</option><option value="247">Virovitica (10.00%)</option><option value="248">Vis (3.00%)</option>
+                <option value="250">Višnjan (5.00%)</option><option value="249">Visoko (10.00%)</option><option value="294">Vižinada-Visinada (3.00%)</option><option value="296">Vladislavci (10.00%)</option>
+                <option value="252">Vodice (6.00%)</option><option value="253">Vodnjan (5.00%)</option><option value="254">Vojnić (7.50%)</option><option value="255">Vrbanja (5.00%)</option>
+                <option value="256">Vrbje (3.00%)</option><option value="257">Vrbovec (12.00%)</option><option value="258">Vrbovsko (10.00%)</option><option value="259">Vrgorac (10.00%)</option>
+                <option value="280">Vrhovine (5.00%)</option><option value="261">Vrlika (7.00%)</option><option value="291">Zadar (12.00%)</option><option value="262">Zadvarje (1.00%)</option>
+                <option value="263">Zagreb (18.00%)</option><option value="264">Zagvozd (6.00%)</option><option value="160">Žakanje (5.00%)</option><option value="265">Zaprešić (12.00%)</option>
+                <option value="266">Zlatar (10.00%)</option><option value="267">Zlatar Bistrica (5.00%)</option><option value="268">Zmijavci (8.00%)</option><option value="270">Žminj (5.00%)</option>
+                <option value="271">Žumberak (3.00%)</option><option value="272">Župa Dubrovačka (10.00%)</option><option value="273">Županja (12.00%)</option></select>
+            </div>
+        </div>
+        <div class=" kalk1textmarginleft">
+            <strong>Broj djece</strong>
+            <div class="input-group ">
+                <span class="input-group-addon" id="basic-addon1"></span>
+                <input type="text" class="form-control" placeholder="Broj djece" aria-describedby="basic-addon1">
+            </div>
+        </div>
+        <div class="kalk1textmarginleft">
+            <strong>Broj uzdržavanih</strong>
+            <div class="input-group  ">
+                <span class="input-group-addon" id="basic-addon1"></span>
+                <input type="text" class="form-control" placeholder="Broj uzdržavanih" aria-describedby="basic-addon1">
+            </div>
+        </div>
+
+        <div class="kalk1textmarginleft">
+            <select name="location" id="form_salarycalculator_location"><option value="0" selected="selected">Bez invaliditeta</option><option value="1" selected="selected">Sa invaliditetom</option><option value="2" selected="selected">100%invaliditet</option></select>
+        </div>
+        <div class="kalk1textmarginleft">
+            <button class="botunmargina">Bruto plaća</button> <button class="botunmargina">Neto plaća</button>
+        </div>
+    </div>
+
+</div>

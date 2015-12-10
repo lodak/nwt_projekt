@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "Kalkulator3";
+    Layout = "~/Views/Shared/_AlatiPartial.cshtml";
+}
+
+@Styles.Render("~/Content/Site.css")
+
+<div col-lg-2>
+    <div class="naslovi">
+        <h2>Kalkulator valuta</h2>
+    </div>
+    <div class="center">
+        <div class=" kalk1textmarginleft ">
+            <p>ovdje ide tekst</p>
+        </div>
+
+        <div>
+            <table class="tablica2">
+                <thead>
+                    <tr>
+                        <th>šifra</th>
+                        <th>oznaka valute</th>
+                        <th>jedinica</th>
+                        <th>kupovni za efektivu i čekove</th>
+                        <th>kupovni za devize</th>
+                        <th>srednji tečaj</th>
+                        <th>prodajni za devize</th>
+                        <th>prodajni za efektivu i čekove</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>036</td><td>AUD</td><td>1</td><td>4,869355</td><td>4,943507</td><td>5,025898</td><td>5,165965</td><td>5,210210</td></tr>
+                    <tr><td>124</td><td>CAD</td><td>1</td><td>4,986083</td><td>5,036448</td><td>5,147539</td><td>5,263088</td><td>5,335109</td></tr>
+                    <tr><td>203</td><td>CZK</td><td>1</td><td>0,276952</td><td>0,281169</td><td>0,282571</td><td>0,292416</td><td>0,296338</td></tr>
+                    <tr><td>208</td><td>DKK</td><td>1</td><td>1,004432</td><td>1,014578</td><td>1,023381</td><td>1,060234</td><td>1,074742</td></tr>
+                    <tr><td>348</td><td>HUF</td><td>100</td><td>2,369540</td><td>2,393475</td><td>2,428468</td><td>2,489214</td><td>2,535408</td></tr>
+                    <tr><td>392</td><td>JPY</td><td>100</td><td>5,514143</td><td>5,598114</td><td>5,695044</td><td>5,822039</td><td>5,900133</td></tr>
+                    <tr><td>578</td><td>NOK</td><td>1</td><td>0,787038</td><td>0,794987</td><td>0,800275</td><td>0,830762</td><td>0,842130</td></tr>
+                    <tr><td>752</td><td>SEK</td><td>1</td><td>0,811143</td><td>0,819336</td><td>0,825844</td><td>0,852110</td><td>0,867923</td></tr>
+                    <tr><td>756</td><td>CHF</td><td>1</td><td>6,818058</td><td>6,886928</td><td>7,050831</td><td>7,300143</td><td>7,363503</td></tr>
+                    <tr><td>826</td><td>GBP</td><td>1</td><td>10,190025</td><td>10,345203</td><td>10,525703</td><td>10,810737</td><td>10,933897</td></tr>
+                    <tr><td>840</td><td>USD</td><td>1</td><td>6,728671</td><td>6,796637</td><td>6,985038</td><td>7,204436</td><td>7,266965</td></tr>
+                    <tr><td>941</td><td>RSD</td><td>1</td><td>0,061115</td><td>0,062362</td><td></td><td>0,064857</td><td>0,065393</td></tr>
+                    <tr><td>977</td><td>BAM</td><td>1</td><td>3,769244</td><td>3,885818</td><td></td><td>3,951877</td><td>3,995398</td></tr>
+                    <tr><td>978</td><td>EUR</td><td>1</td><td>7,590000</td><td>7,600000</td><td>7,635345</td><td>7,700000</td><td>7,710000</td></tr>
+                    <tr><td>985</td><td>PLN</td><td>1</td><td>1,716972</td><td>1,743119</td><td>1,759296</td><td>1,812844</td><td>1,837161</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="tecajnaFilterWrapper">
+            <table cellspacing="0" cellpadding="3" class="tecajnaFilter">
+                <tbody>
+                    <tr>
+                        <td>Unesite iznos</td>
+                        <td><input id="iznosSA" name="iznosSA" type="text" class="textbox tecajnaFilterbox"></td>
+                        <td width="10">&nbsp;</td>
+                        <td>
+                            <select id="valutaSA" name="valutaSA" style="width:60px;">
+                                <option value="978">EUR</option>
+                                <option value="036">AUD</option>
+                                <option value="124">CAD</option>
+                                <option value="191">HRK</option>
+                                <option value="203">CZK</option>
+                                <option value="208">DKK</option>
+                                <option value="348">HUF</option>
+                                <option value="392">JPY</option>
+                                <option value="578">NOK</option>
+                                <option value="752">SEK</option>
+                                <option value="756">CHF</option>
+                                <option value="826">GBP</option>
+                                <option value="840">USD</option>
+                                <option value="941">RSD</option>
+                                <option value="977">BAM</option>
+                                <option value="985">PLN</option>
+                            </select>
+                        </td>
+                        <td width="10">&nbsp;</td>
+                        <td><input name="iznosNa" id="iznosNA" type="text" class="textbox tecajnaFilterbox" value="" style="width: 120px;" readonly="readonly"></td>
+                        <td width="10">&nbsp;</td>
+                        <td>
+                            <select id="valutaNA" name="valutaNA" style="width:60px;">
+                                <option value="978">EUR</option>
+                                <option value="036">AUD</option>
+                                <option value="124">CAD</option>
+                                <option value="191">HRK</option>
+                                <option value="203">CZK</option>
+                                <option value="208">DKK</option>
+                                <option value="348">HUF</option>
+                                <option value="392">JPY</option>
+                                <option value="578">NOK</option>
+                                <option value="752">SEK</option>
+                                <option value="756">CHF</option>
+                                <option value="826">GBP</option>
+                                <option value="840">USD</option>
+                                <option value="941">RSD</option>
+                                <option value="977">BAM</option>
+                                <option value="985">PLN</option>
+                            </select>
+                        </td>
+                        <td width="10">&nbsp;</td>
+                        <td style="width: 200px; text-align: right;">
+                            <span class="button"> <a href="#" id="konverter" style="text-align:left;"> Izračunaj </a> </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+
+    </div>
+
+</div>

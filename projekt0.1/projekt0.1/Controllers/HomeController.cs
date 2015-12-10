@@ -15,15 +15,46 @@ namespace projekt0._1.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
-
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            return View();
+        }
 
+        public ActionResult knjigovodstvo()
+        {
+            return View();
+        }
+
+        public ActionResult poslovno_savjetovanje()
+        {
+            return View();
+        }
+
+        public ActionResult turizam()
+        {
+            return View();
+        }
+
+        public ActionResult Alati()
+        {
+            return View();
+        }
+
+        public ActionResult apart0()
+        {
+            return View();
+        }
+
+        public ActionResult Login()
+        {
+           return View();
+        }
+
+        public ActionResult Registration()
+        {
             return View();
         }
     }
