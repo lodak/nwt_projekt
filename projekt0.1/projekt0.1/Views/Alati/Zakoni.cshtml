@@ -4,8 +4,11 @@
     Layout = "~/Views/Shared/_AlatiPartial.cshtml";
 }
 
+@Styles.Render("~/Content/Site.css")
+
 <h2>Obavjesti, pravila, zakoni</h2>
 
+<div class="container">
 <div class="container col-sm-8">
     <div class="bs-callout bs-callout-danger">
         <h4>Plaćanje u postupku trgovanja otpadom na malo isključivo na žiro račun</h4>
@@ -19,6 +22,9 @@
             U časopisu RRiF br. 12/15. u članku pod nazivom Nema više otkupa otpada za gotovinu naveli smo da se plaćanje za otkupljeni otpad može obaviti na žiro-račun ili na tekući račun jer je prema
             tada objavljenim izmjenama Pravilnika o gospodarenju otpadom tako proizlazilo. Molimo čitatelje da ovu izmjenu pravilnika uzmu u obzir, tj. da navedenu isplatu obavljaju „isključivo na žiro-račun“.
         </p>
+        <p class="lead"><button class="btn btn-default">Read More</button></p>
+        <p class="pull-right"><span class="label label-default">keyword</span> <span class="label label-default">tag</span> <span class="label label-default">post</span></p>
+        <ul class="list-inline"><li><a href="#">2 Days Ago</a></li><li><a href="#"><i class="glyphicon glyphicon-comment"></i> 2 Comments</a></li><li><a href="#"><i class="glyphicon glyphicon-share"></i> 14 Shares</a></li></ul>
     </div>
     <br>
 
@@ -38,6 +44,9 @@
             Vrijednost darovane robe/proizvoda određuje se nabavnoj (proizvodnoj) cijeni. O vrijednosti darovanja izvješćuje se Porezna uprava na obrasacu DONH.
             Prvo izvješće za darovanu hranu u 2015.podnijet će se do 20. lipnja 2016.
         </p>
+        <p class="lead"><button class="btn btn-default">Read More</button></p>
+        <p class="pull-right"><span class="label label-default">keyword</span> <span class="label label-default">tag</span> <span class="label label-default">post</span></p>
+        <ul class="list-inline"><li><a href="#">4 Days Ago</a></li><li><a href="#"><i class="glyphicon glyphicon-comment"></i> 7 Comments</a></li><li><a href="#"><i class="glyphicon glyphicon-share"></i> 56 Shares</a></li></ul>
     </div>
     <br>
 
@@ -58,6 +67,9 @@
             Sudionici poduzetničkog seminara (koji počinju 30. XI. do 9. XII.) u vezi s pripremama računovodstva za 2016. i za izradu poreznih i financijskih izvještaja dobit će u
             okviru seminarskog  materijala novo (XX.) izdanje RRiF-ovog računskog plana za primjenu od 2016.
         </p>
+        <p class="lead"><button class="btn btn-default">Read More</button></p>
+        <p class="pull-right"><span class="label label-default">keyword</span> <span class="label label-default">tag</span> <span class="label label-default">post</span></p>
+        <ul class="list-inline"><li><a href="#">1 Week Ago</a></li><li><a href="#"><i class="glyphicon glyphicon-comment"></i> 4 Comments</a></li><li><a href="#"><i class="glyphicon glyphicon-share"></i> 34 Shares</a></li></ul>
     </div>
     <br>
 
@@ -87,5 +99,50 @@
             Isto tako, ovlašteni posrednik u prometu nekretnina obvezan je u oglasu o iznajmljivanju, davanju na leasing ili u zakup zgrade, odnosno njezina posebnog dijela, 
             koji se objavljuje u medijima, navesti energetski razred zgrade, odnosno njezina posebnog dijela.
         </p>
+        <p class="lead"><button class="btn btn-default">Read More</button></p>
+        <p class="pull-right"><span class="label label-default">keyword</span> <span class="label label-default">tag</span> <span class="label label-default">post</span></p>
+        <ul class="list-inline"><li><a href="#">1 Week Ago</a></li><li><a href="#"><i class="glyphicon glyphicon-comment"></i> 4 Comments</a></li><li><a href="#"><i class="glyphicon glyphicon-share"></i> 34 Shares</a></li></ul>
     </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="input-group" id="adv-search">
+                <input type="text" class="form-control" placeholder="Search for snippets" />
+                <div class="input-group-btn">
+                    <div class="btn-group" role="group">
+                        <div class="dropdown dropdown-lg">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                            <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                <form class="form-horizontal" role="form">
+                                    <div class="form-group">
+                                        <label for="filter">Filter by</label>
+                                        <select class="form-control">
+                                            <option value="0" selected>All Snippets</option>
+                                            <option value="1">Featured</option>
+                                            <option value="2">Most popular</option>
+                                            <option value="3">Top rated</option>
+                                            <option value="4">Most commented</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contain">Author</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contain">Contains the words</label>
+                                        <input class="form-control" type="text" />
+                                    </div>
+                                    <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </form>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </div>

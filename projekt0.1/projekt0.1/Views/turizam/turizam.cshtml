@@ -19,9 +19,7 @@
         <div class="col-md-7">
             <h2>Kuća i okućnica </h2>
             <p>Kuća se nalazi u ulici Neretvanska, na broju 14a. Posjeduje parking za 6 automobila. Uz kuću se nalazi i kućica za roštilj. Ispred kuće je lunge prostor za goste i domaćine.</p>
-            @Html.ActionLink("Galerija >>", "turizam/apart0", null, new {@class="btn btn-default"})
-
-            <p><a class="btn btn-default" href="apart0.html" role="button">Galerija »</a></p>
+            @Html.ActionLink("Galerija >>", "apart0", "turizam", null, new {@class="btn btn-default"})
         </div>
         <div class="col-md-5">
             <img data-holder-rendered="true" src="~/pics/kuca2.jpg" class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto">
@@ -37,7 +35,7 @@
                     U spavaćoj sobi je bračni krevet pored kojeg su smješteni noći ormarići sa pripadajućim lampama. Takoder se nalazi veliki ormar, radni stol i sjedalica.
                     Poseban ugođaj daje ogledalo nasuprot krevetu. U kupaonici je klasična tuš kabina, WC, i dva ormara za higijenske potrepštine.
                 </p>
-                <p><a class="btn btn-default" href="apart.html" role="button">Galerija »</a></p>
+                @Html.ActionLink("Galerija >>", "apart", "turizam", null, new { @class = "btn btn-default" })
             </div>
             <div class="col-md-5 col-md-pull-7">
                 <img data-holder-rendered="true" src="~/pics/DSC_0317.JPG" class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto">
@@ -50,7 +48,7 @@
                 <p>Apartman sadrži bogato opremljenu kuhinju (izdvojeno: toster, mikrovalna, kuhalo za vodu, mikser) i ugudno uređeni dnevni boravak iz kojeg se izlazi na balkon. </p>
                 Ondje se nalazi stol sa četiri sjedalice i sušilo za robu. Idealan je za večernje ispijanje omiljenog piva i kartanje sa društvom. </p>
                 <p>U spavaćoj sobi je bračni krevet pored kojeg su smješteni noći ormarići sa pripadajućim lampama. Takoder se nalazi veliki ormar, radni stol i sjedalica, ali i jedan dodatan ležaj. U kupaonici je klasična tuš kabina, WC, i dva ormara za higijenske potrepstine.</p>
-                <p><a class="btn btn-default" href="apart2.html" role="button">Galerija »</a></p>
+                @Html.ActionLink("Galerija >>", "apart2", "turizam", null, new { @class = "btn btn-default" })
             </div>
             <div class="col-md-5">
                 <img data-holder-rendered="true" src="~/pics/DSC_0097-1.jpg" class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto">
