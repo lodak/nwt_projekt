@@ -1,29 +1,54 @@
 ﻿@{
     ViewBag.Title = "knjigovodstvo";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutOnama.cshtml";
 }
+
+
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">O nama</h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("O nama", "Index")
+                </li>
+                <li class="active">Usluge - Knjigovodstvo</li>
+            </ol>
+        </div>
+    </div>
+
+
+    <ul class="nav nav-tabs">
+        <li>@Html.ActionLink("Točka pokrića", "Index")</li>
+        <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Usluge
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>@Html.ActionLink("Knjigovodstvo", "knjigovodstvo")</li>
+                <li>@Html.ActionLink("Poslovno savjetovanje", "poslovno_savjetovanje")</li>
+                <li>@Html.ActionLink("Turizam", "turizam", "turizam")</li>
+            </ul>
+        </li>
+        <li>@Html.ActionLink("Naš tim", "Tim")</li>
+        <li>@Html.ActionLink("Naši partneri", "Partneri")</li>
+    </ul>
+</div>
+
+
+
+
     <!-- Page Content -->
     <div class="container">
         <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Usluge
-                    <small>Knjigovodstvo</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li>
-                        @Html.ActionLink("Početna", "Index")
-                    </li>
-                    <li class="active">Usluge</li>
-                </ol>
-            </div>
-        </div>
+
         <!-- /.row -->
         <!-- Image Header -->
         <div class="row">
             <div class="col-lg-12">                
-                <img class="img-responsive" src="~/pics/racunovodstvo.jpg" alt="">
+                <img class="img-responsive" style="margin-top:50px" src="~/pics/racunovodstvo.jpg" alt="">
             </div>
         </div>
         <!-- /.row -->

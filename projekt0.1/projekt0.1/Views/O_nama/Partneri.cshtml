@@ -1,0 +1,80 @@
+﻿
+@{
+    ViewBag.Title = "O_nama";
+    Layout = "~/Views/Shared/_LayoutOnama.cshtml";
+}
+
+@Styles.Render("~/Content/Site.css")
+
+<!-- Page Content -->
+
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">O nama</h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("O nama", "Index", "O_nama")
+                </li>
+                <li class="active">Naši partneri</li>
+            </ol>
+        </div>
+    </div>
+
+
+    <ul class="nav nav-tabs">
+        <li>@Html.ActionLink("Točka pokrića", "Index")</li>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Usluge
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>@Html.ActionLink("Knjigovodstvo", "knjigovodstvo")</li>
+                <li>@Html.ActionLink("Poslovno savjetovanje", "poslovno_savjetovanje")</li>
+                <li>@Html.ActionLink("Turizam", "turizam", "turizam")</li>
+            </ul>
+        </li>
+        <li>@Html.ActionLink("Naš tim", "Tim")</li>
+        <li class="active">@Html.ActionLink("Naši partneri", "Partneri")</li>
+    </ul>
+</div>
+
+
+<div class="row">
+    <div class="container">
+        <div class="col-lg-12">
+            <h2 class="page-header">Naši partneri</h2>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive customer-img" src="http://www.autoskola-rotor.hr/Portals/0/Images/logo_mali.png" alt="">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive customer-img" src="http://www.tiskara-reprint.hr/images/logo.png" alt="">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive customer-img" src="http://zanin-centar.com/wp-content/uploads/2014/06/Zanin_v32.png" alt="">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive customer-img" src="http://www.omv-indoil.hr/components/com_ponygallery/img_thumbnails/11_20070207_2097570980.jpg" alt="">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive customer-img" src="http://www.novifaktor.hr/templates/yoo_bigeasy/images/nf-header.png" alt="">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive customer-img" src="http://www.1aplusemc2.com/wp-content/uploads/2014/03/logo-piramida-web-horizontal-banner2.png" alt="">
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6">
+            <img class="img-responsive customer-img" src="http://www.iiczagabria.esteri.it/NR/rdonlyres/A71DCA67-DCE5-4672-859D-5B7850D8A4C5/89004/logo1.jpg" alt="">
+        </div>
+    </div>
+</div>
+
+<hr>
+<!-- Footer -->
+<!-- /.container -->
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>

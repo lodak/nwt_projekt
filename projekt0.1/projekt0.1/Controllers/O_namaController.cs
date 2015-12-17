@@ -6,37 +6,37 @@ using System.Web.Mvc;
 
 namespace projekt0._1.Controllers
 {
-    public class HomeController : Controller
+    public class O_namaController : Controller
     {
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult O_nama()
+        public ActionResult knjigovodstvo()
         {
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult poslovno_savjetovanje()
         {
             return View();
         }
 
-        
-        public ActionResult Alati()
+        public ActionResult apart2()
         {
             return View();
-        }
-        
-        public ActionResult Login()
-        {
-           return View();
         }
 
-        public ActionResult Registration()
+        public ActionResult Tim()
         {
             return View();
         }
+
+        public ActionResult Partneri()
+        {
+            return View();
+        }
+
     }
 }

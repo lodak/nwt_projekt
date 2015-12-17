@@ -26,13 +26,13 @@ namespace projekt0._1.Tests.Controllers
         }
 
         [TestMethod]
-        public void About()
+        public void O_nama()
         {
             // Arrange
             HomeController controller = new HomeController();
 
             // Act
-            ViewResult result = controller.About() as ViewResult;
+            ViewResult result = controller.O_nama() as ViewResult;
 
             // Assert
             Assert.AreEqual("Your application description page.", result.ViewBag.Message);

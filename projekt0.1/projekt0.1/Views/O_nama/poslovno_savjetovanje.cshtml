@@ -3,27 +3,43 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
     <!-- Page Content -->
-    <div class="container">
-        <!-- Page Heading/Breadcrumbs -->
-        <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">
-                    Usluge
-                    <small>Poslovno savjetovanje</small>
-                </h1>
-                <ol class="breadcrumb">
-                    <li>
-                        @Html.ActionLink("Početna", "Index")
-                    </li>
-                    <li class="active">Usluge</li>
-                </ol>
-            </div>
+<div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">O nama</h1>
+            <ol class="breadcrumb">
+                <li>
+                    @Html.ActionLink("O nama", "Index")
+                </li>
+                <li class="active">Usluge - Poslovno savjetovanje</li>
+            </ol>
         </div>
-        <!-- /.row -->
-        <!-- Image Header -->
+    </div>
+
+
+    <ul class="nav nav-tabs">
+        <li>@Html.ActionLink("Točka pokrića", "Index")</li>
+        <li class="dropdown active">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                Usluge
+                <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li>@Html.ActionLink("Knjigovodstvo", "knjigovodstvo")</li>
+                <li>@Html.ActionLink("Poslovno savjetovanje", "poslovno_savjetovanje")</li>
+                <li>@Html.ActionLink("Turizam", "turizam", "turizam")</li>
+            </ul>
+        </li>
+        <li>@Html.ActionLink("Naš tim", "Tim")</li>
+        <li>@Html.ActionLink("Naši partneri", "Partneri")</li>
+    </ul>
+</div>
+
+    <div class="container">
         <div class="row">
             <div class="col-lg-12">
-                <img class="img-responsive" src="~/pics/poslovno-savjetovanje.jpg" alt="">
+                <img class="img-responsive" style="margin-top:50px" src="~/pics/poslovno-savjetovanje.jpg" alt="">
             </div>
         </div>
         <!-- /.row -->

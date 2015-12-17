@@ -170,6 +170,7 @@
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\AlatiController.cs" />
+    <Compile Include="Controllers\O_namaController.cs" />
     <Compile Include="Controllers\turizamController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -270,7 +271,6 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -293,8 +293,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Home\knjigovodstvo.cshtml" />
-    <Content Include="Views\Home\poslovno_savjetovanje.cshtml" />
     <Content Include="Views\turizam\turizam.cshtml" />
     <Content Include="Views\Shared\_AlatiPartial.cshtml" />
     <Content Include="Views\turizam\apart0.cshtml" />
@@ -312,6 +310,12 @@
     <Content Include="Views\Shared\_LayoutRegistration.cshtml" />
     <Content Include="Views\Home\Login.cshtml" />
     <Content Include="Views\Home\Registration.cshtml" />
+    <Content Include="Views\O_nama\Index.cshtml" />
+    <Content Include="Views\O_nama\knjigovodstvo.cshtml" />
+    <Content Include="Views\O_nama\poslovno_savjetovanje.cshtml" />
+    <Content Include="Views\Shared\_LayoutOnama.cshtml" />
+    <Content Include="Views\O_nama\Tim.cshtml" />
+    <Content Include="Views\O_nama\Partneri.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
