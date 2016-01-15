@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/footer.css")
+
+    <link rel="stylesheet" href="~/font-awesome-4.5.0/css/font-awesome.min.css">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Točka pokrića</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/business-frontpage.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="left:auto;">
+                <div>
+                    <ul class="nav navbar-nav navbar-left">
+                        <li>
+                            @Html.ActionLink("Početna", "Index", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("O nama", "Index", "O_nama")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Alati", "Index", "Alati")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Blog", "Zakoni", "Blog")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Kontakt", "Contact", "Home")
+                        </li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Poveznice <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="http://www.hnb.hr/">Hrvatska narodna banka</a>
+                                </li>
+                                <li>
+                                    <a href="http://web.hgk.hr/">Hrvatska gospodarska komora</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.hitro.hr/Default.aspx">Hitro HR</a>
+                                </li>
+                                <li>
+                                    <a href="http://www.fina.hr/Default.aspx">FINA</a>
+                                </li>
+                                <li>
+                                    <a href="https://e-porezna.porezna-uprava.hr">ePorezna</a>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            @Html.ActionLink("Log in", "Login", "Home")
+                        </li>
+                        <li>
+                            @Html.ActionLink("Register", "Registration", "Home")
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <div class="container">
+        <!-- Page Heading/Breadcrumbs -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">O nama</h1>
+                <ol class="breadcrumb">
+                    <li>
+                        @Html.ActionLink("O nama", "O_nama", "O_nama")
+                    </li>
+                    <li>
+                        @Html.ActionLink("Usluge - Turizam", "turizam", "turizam")
+                    </li>
+                    <li class="active">Kuća i okućnica</li>
+                </ol>
+            </div>
+        </div>
+
+       
+
+    </div>
+
+
+    @RenderBody()
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
+
+<footer class="footer-distributed">
+    <div class="footer-left">
+        <!--<h3>Company<span>logo</span></h3>-->
+        <p class="footer-links">
+            @Html.ActionLink("Početna", "Index", "Home")
+            ·
+            @Html.ActionLink("O nama", "Index", "O_nama")
+            ·
+            @Html.ActionLink("Alati", "Index", "Alati")
+            ·
+            @Html.ActionLink("Blog", "Index", "Blog")
+            ·
+            @Html.ActionLink("Kontakt", "Contact", "Home")
+        </p>
+        <p class="footer-company-name">Točka pokrića &copy; 2015</p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Vankina 19</span> Zagreb, Hrvatska</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>01 6672 523</p>
+        </div>
+        <div>
+            <i class="fa fa-fax"></i>
+            <p>01 7890 162</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:tpokrica@tocka-pokrica.hr">tpokrica@tocka-pokrica.hr</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>O poduzeću</span>
+            Tim naših stručnjaka pomoći će Vam da učinkovito organizirate poslovanje iznad točke pokrića i tako ostvarite željene poslovne rezultate.
+        </p>
+        <div class="footer-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+        </div>
+    </div>
+</footer>

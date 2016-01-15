@@ -1,68 +1,183 @@
 ﻿@{
-    Layout = "~/Views/Shared/_Layoutturizam.cshtml";
+    Layout = "~/Views/Shared/_Layoutapartmani.cshtml";
 }
+@*
+    @Styles.Render("~/Content.Site.css")*@
+<head>
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/js/jquery-1.10.2.min.js"></script>
+    <script src="~/js/JavaScriptapartmani.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
 
-<div class="container">
-    <h3>  Kuća i okućnica</h3>
 
-    <!-- thumb navigation carousel -->
-    <div class="col-md-12 hidden-xs" id="slider-thumbs">
+</head>
 
-        <!-- thumb navigation carousel items -->
-        <ul class="list-inline">
-            <li>
-                <a id="carousel-selector-0" class="selected">
-                    <img src="~/pics/DSC_0114thumb.jpg" class="img-responsive">
-                </a>
-            </li>
-            <li>
-                <a id="carousel-selector-1">
-                    <img src="~/pics/DSC_0115thumb.jpg" class="img-responsive">
-                </a>
-            </li>
-            <li>
-                <a id="carousel-selector-2">
-                    <img src="~/pics/DSC_0080thumb.jpg" class="img-responsive">
-                </a>
-            </li>
-            <li>
-                <a id="carousel-selector-3">
-                    <img src="~/pics/gradele_thumb.jpg" class="img-responsive">
-                </a>
-            </li>
-        </ul>
+<body>
+    <div class="container">
+        <div class="row">
+            <h1>Apartman sa spavaćom sobom i balkonom</h1>
+            <div class="col-md-4"><a title="Image 1" href="#"><img class="thumbnail img-responsive" src="~/pics/kuca2.jpg"></a></div>
+            <div class="col-md-4"><a title="Image 2" href="#"><img class="thumbnail img-responsive" src="~/pics/DSC_0115.jpg"></a></div>
+            <div class="col-md-4"><a title="Image 3" href="#"><img class="thumbnail img-responsive" src="~/pics/13494747.jpg"></a></div>
+            <div class="col-md-4"><a title="Image 4" href="#"><img class="thumbnail img-responsive" src="~/pics/DSC_0080.jpg"></a></div>
+            <div class="col-md-4"><a title="Image 5" href="#"><img class="thumbnail img-responsive" src="~/pics/gradele.jpg"></a></div>
+            <div class="col-md-4"><a title="Image 6" href="#"><img class="thumbnail img-responsive" src="~/pics/21294603.jpg"></a></div>
 
+        </div>
+        <hr>
+        @Html.ActionLink("Povratak na Apartmane Ante", "turizam", "turizam", new { @class = "btn btn-lg btn-info" })
+
+        <hr>
     </div>
-
-
-    <!-- main slider carousel -->
-    <div class="row">
-        <div class="col-md-12" id="slider">
-
-            <div class="col-md-12" id="carousel-bounding-box">
-                <div id="myCarousel" class="carousel slide">
-                    <!-- main slider carousel items -->
-                    <div class="carousel-inner">
-                        <div class="active item" data-slide-number="0">
-                            <img src="~/pics/DSC_0114.jpg" class="img-responsive">
-                        </div>
-                        <div class="item" data-slide-number="1">
-                            <img src="~/pics/DSC_0115.jpg" class="img-responsive">
-                        </div>
-                        <div class="item" data-slide-number="2">
-                            <img src="~/pics/DSC_0080.jpg" class="img-responsive">
-                        </div>
-                        <div class="item" data-slide-number="3">
-                            <img src="~/pics/gradele.jpg" class="img-responsive">
-                        </div>
+    <div class="modal" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                    <h3 class="modal-title"></h3>
+                </div>
+                <div class="modal-body">
+                    <div id="modalCarousel" class="carousel">
+                        <div class="carousel-inner"></div>
+                        <a class="carousel-control left" href="#modalCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
                     </div>
-                    <!-- main slider carousel nav controls --> <a class="carousel-control left" href="#myCarousel" data-slide="prev">‹</a>
-                    <a class="carousel-control right" href="#myCarousel" data-slide="next">›</a>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
-    <!--/main slider carousel-->
+
+</body>
 
 
+<script>
+    $("[data-toggle='modal']").modal();
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@*@{
+    Layout = "~/Views/Shared/_Layoutapartmani.cshtml";
+}
+
+@Styles.Render("~/Content.Site.css")
+<head>
+    <link rel="stylesheet" type="text/css" href="~/Content/Site.css" />
+    <script type="text/javascript" src="~/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/js/JavaScriptapartmani.js"></script>
+    <script type="text/javascript" src="~/js/jquery.js"></script>
+    <script type="text/javascript" src="~/js/carousel.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <div class="row">
+        <h1>Kuća i okućnica</h1>
+        <div class="row">
+            <div class="col-md-4"><a href="#" title="Image 1"><img src="~/pics/kuca2.jpg" class="thumbnail img-responsive"></a></div>
+            <div class="col-md-4"><a href="#" title="Image 2"><img src="~/pics/DSC_0115.jpg" class="thumbnail img-responsive"></a></div>
+            <div class="col-md-4"><a href="#" title="Image 3"><img src="~/pics/DSC_0114.jpg" class="thumbnail img-responsive"></a></div>
+            <div class="col-md-4"><a href="#" title="Image 4"><img src="~/pics/DSC_0080.jpg" class="thumbnail img-responsive"></a></div>
+            <div class="col-md-4"><a href="#" title="Image 5"><img src="~/pics/gradele.jpg" class="thumbnail img-responsive"></a></div>
+            <div class="col-md-4"><a href="#" title="Image 6"><img src="~/pics/gradele.jpg" class="thumbnail img-responsive"></a></div>
+        </div>
+        <hr>
+    </div>
 </div>
+    <div class="modal" id="myModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" type="button" data-dismiss="modal">×</button>
+                    <h3 class="modal-title"></h3>
+                </div>
+                <div class="modal-body">
+                    <div id="modalCarousel" class="carousel">
+                        <div class="carousel-inner"></div>
+                        <a class="carousel-control left" href="#modaCarousel" data-slide="prev"><i class="glyphicon glyphicon-chevron-left"></i></a>
+                        <a class="carousel-control right" href="#modalCarousel" data-slide="next"><i class="glyphicon glyphicon-chevron-right"></i></a>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/JavaScriptapartmani.js"></script>
+
+    <script>
+    $("[data-toggle='modal']").modal();
+    </script>
+
+    <script>
+    $('.carousel').carousel({
+        interval: 3000
+    })
+    </script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="~/js/bootstrap.min.js"></script>*@

@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
 
-
+  
+    <link rel="stylesheet" href="~/font-awesome-4.5.0/css/font-awesome.min.css">
+    <link href="~/Content/Site.css" rel="stylesheet" />
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,9 +12,13 @@
     <meta name="author" content="">
     <title>Točka pokrića</title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/business-frontpage.css" rel="stylesheet" />
+    <link href="~/Content/footer.css" rel="stylesheet" />
     <!-- Custom CSS -->
-    <link href="css/business-frontpage.css" rel="stylesheet">
+    <script src="~/js/jquery-1.10.2.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -44,16 +48,16 @@
                         </li>
                         <li>
                             @Html.ActionLink("O nama", "Index", "O_nama")
-                        </li>                        
-
+                        </li>
                         <li>
                             @Html.ActionLink("Alati", "Index", "Alati")
                         </li>
-
+                        <li>
+                            @Html.ActionLink("Blog", "Zakoni", "Blog")
+                        </li>
                         <li>
                             @Html.ActionLink("Kontakt", "Contact")
-                        </li>
-
+                        </li>                     
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Poveznice <b class="caret"></b></a>
                             <ul class="dropdown-menu">
@@ -75,6 +79,7 @@
                             </ul>
 
                         </li>
+                     </ul>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -104,4 +109,56 @@
     @RenderSection("scripts", required: false)
 
 </body>
+
 </html>
+   <!-- Footer -->
+<footer class="footer-distributed">
+    <div class="footer-left">
+        
+        <!--<h3>Company<span>logo</span></h3>-->
+        <p class="footer-links">
+            @Html.ActionLink("Početna", "Index", "Home")
+            ·
+            @Html.ActionLink("O nama", "Index", "O_nama")
+            ·
+            @Html.ActionLink("Alati", "Index", "Alati")
+            ·
+            @Html.ActionLink("Blog", "Index", "Blog")
+            ·
+            @Html.ActionLink("Kontakt", "Contact", "Home")
+        </p>
+        <!--<span><img class="img-responsive" src="~/pics/baner - Copy.jpg" /></span>-->
+        <br />
+        <p class="footer-company-name">Točka pokrića &copy; 2015</p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Vankina 19</span> Zagreb, Hrvatska</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>01 6672 523</p>
+        </div>
+        <div>
+            <i class="fa fa-fax"></i>
+            <p>01 7890 162</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:tpokrica@tocka-pokrica.hr">tpokrica@tocka-pokrica.hr</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>O poduzeću</span>
+            Tim naših stručnjaka pomoći će Vam da učinkovito organizirate poslovanje iznad točke pokrića i tako ostvarite željene poslovne rezultate.
+        </p>
+        <div class="footer-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+        </div>
+    </div>
+</footer>

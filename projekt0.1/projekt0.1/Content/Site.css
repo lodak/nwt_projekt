@@ -20,7 +20,7 @@
 input,
 select,
 textarea {
-    max-width: 280px;
+    max-width: 100%;
 }
 
 .kalk1textmarginleft {
@@ -109,3 +109,23 @@ body {
     /*padding-top: 50px;*/
     margin-top: 50px;
 }
+
+
+
+/*.modal-dialog {width:800px;}
+.thumbnail {margin-bottom:6px;}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+}*/
+
+.thumbnail {margin-bottom:6px;}
+.modal-dialog {width:800px;}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+
+.open .dropdown-menu{display:block;}

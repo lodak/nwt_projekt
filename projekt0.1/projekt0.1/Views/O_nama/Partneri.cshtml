@@ -4,10 +4,13 @@
     Layout = "~/Views/Shared/_LayoutOnama.cshtml";
 }
 
-@Styles.Render("~/Content/Site.css")
-
-<!-- Page Content -->
-
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/business-frontpage.css" rel="stylesheet" />
+<link href="~/Content/footer.css" rel="stylesheet" />
+<!-- Custom CSS -->
+<script src="~/js/jquery-1.10.2.min.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <div class="container">
     <!-- Page Heading/Breadcrumbs -->
     <div class="row">
@@ -26,7 +29,7 @@
     <ul class="nav nav-tabs">
         <li>@Html.ActionLink("Točka pokrića", "Index")</li>
         <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            <a class="dropdown-toggle" data-toggle="dropdown">
                 Usluge
                 <span class="caret"></span>
             </a>

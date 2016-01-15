@@ -4,9 +4,13 @@
     Layout = "~/Views/Shared/_LayoutOnama.cshtml";
 }
 
-@Styles.Render("~/Content/Site.css")
-
-<!-- Page Content -->
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+<link href="~/Content/business-frontpage.css" rel="stylesheet" />
+<link href="~/Content/footer.css" rel="stylesheet" />
+<!-- Custom CSS -->
+<script src="~/js/jquery-1.10.2.min.js"></script>
+<script src="~/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 <div class="container">
     <!-- Page Heading/Breadcrumbs -->
@@ -24,7 +28,7 @@
 
 
     <ul class="nav nav-tabs">
-        <li>@Html.ActionLink("Točka pokrića", "Index")</li>
+        <li>@Html.ActionLink("Točka pokrića", "Index", "O_nama")</li>
         <li class="dropdown">
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Usluge
@@ -45,73 +49,11 @@
 <div class="row">
     
     <div class="container" style="margin-top:20px">
-        <div class="col-md-4 text-center">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h3>
-                        Andreja Odak<br>
-                        <small>Direktorica</small>
-                    </h3>
-                    <p>098/172-2360</p>
-                    <p>andreja.odak@tocka-pokrica.hr</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 text-center">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h3>
-                        Matija Odak<br>
-                        <small>Ekonomist</small>
-                    </h3>
-                    <p>098/1374-238</p>
-                    <p>matija.odak@tocka-pokrica.hr</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 text-center">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h3>
-                        dipl.iur. Ivan Odak<br>
-                        <small>Pravnik</small>
-                    </h3>
-                    <p>098/353-213</p>
-                    <p>ivan.odak@tocka-pokrica.hr</p>
-                </div>
-            </div>
-        </div>
-        
-        <div class="col-md-4 text-center" style="margin-top:10px">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h3>
-                        univ.bacc.ing.comp. Luka Odak<br>
-                        <small>Tehnička podrška</small>
-                    </h3>
-                    <p>098/1891-380</p>
-                    <p>luka.odak@tocka-pokrica.hr</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 text-center" style="margin-top:10px">
-            <div class="thumbnail">
-                <div class="caption">
-                    <h3>
-                        Marko Odak<br>
-                    </h3>
-                    <p>099/500-4593</p>
-                    <p>marko.odak@tocka-pokrica.hr</p>
-                </div>
-            </div>
-        </div>
+       
 
     </div>
-</div>
-   
-    <hr>
-<!-- Footer -->
-
+</div>   
+<hr>
 <!-- /.container -->
 <!-- jQuery -->
 <script src="js/jquery.js"></script>

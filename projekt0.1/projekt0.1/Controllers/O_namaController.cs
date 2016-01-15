@@ -22,11 +22,7 @@ namespace projekt0._1.Controllers
         {
             return View();
         }
-
-        public ActionResult apart2()
-        {
-            return View();
-        }
+        
 
         public ActionResult Tim()
         {

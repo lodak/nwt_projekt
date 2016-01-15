@@ -1,9 +1,12 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/footer.css")
 
+    <link rel="stylesheet" href="~/font-awesome-4.5.0/css/font-awesome.min.css">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,9 +15,9 @@
     <meta name="author" content="">
     <title>Točka pokrića</title>
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="~/Content/business-frontpage.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -48,7 +51,9 @@
                         <li>
                             @Html.ActionLink("Alati", "Index", "Alati")
                         </li>
-
+                        <li>
+                            @Html.ActionLink("Blog", "Zakoni", "Blog")
+                        </li>
                         <li>
                             @Html.ActionLink("Kontakt", "Contact", "Home")
                         </li>
@@ -74,6 +79,7 @@
                             </ul>
 
                         </li>
+                    </ul>
                 </div>
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -84,11 +90,7 @@
                             @Html.ActionLink("Register", "Registration", "Home")
                         </li>
                     </ul>
-
                 </div>
-
-
-
             </div>
 
 
@@ -102,10 +104,6 @@
         <br>
         <ul class="nav nav-sidebar">
             <li class="active">@Html.ActionLink("Naputak", "Index", "Alati")</li>
-        </ul>
-        <br>
-        <ul class="nav nav-sidebar">
-            <li>@Html.ActionLink("Propisi, obavjesti, aktualnosti", "Zakoni", "Alati")</li>
         </ul>
         <br>
         <ul class="nav nav-sidebar">
@@ -133,6 +131,55 @@
 
 </body>
 </html>
+
+<footer class="footer-distributed ">
+    <div class="footer-left">
+        <!--<h3>Company<span>logo</span></h3>-->
+        <p class="footer-links">
+            @Html.ActionLink("Početna", "Index", "Home")
+            ·
+            @Html.ActionLink("O nama", "Index", "O_nama")
+            ·
+            @Html.ActionLink("Alati", "Index", "Alati")
+            ·
+            @Html.ActionLink("Blog", "Index", "Blog")
+            ·
+            @Html.ActionLink("Kontakt", "Contact", "Home")
+        </p>
+        <p class="footer-company-name">Točka pokrića &copy; 2015</p>
+    </div>
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Vankina 19</span> Zagreb, Hrvatska</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>01 6672 523</p>
+        </div>
+        <div>
+            <i class="fa fa-fax"></i>
+            <p>01 7890 162</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:tpokrica@tocka-pokrica.hr">tpokrica@tocka-pokrica.hr</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>O poduzeću</span>
+<p>
+            Tim naših stručnjaka pomoći će Vam da učinkovito organizirate poslovanje iznad točke pokrića i tako ostvarite željene poslovne rezultate.
+        </p>
+        <div class="footer-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-github"></i>
+        </div>
+    </div>
+</footer>
 
 
 

@@ -19,3 +19,5 @@ $('#myCarousel').on('slid', function (e) {
   $('[id^=carousel-selector-]').removeClass('selected');
   $('[id=carousel-selector-'+id+']').addClass('selected');
 });
+
+$('.dropdown-toggle').dropdown()
