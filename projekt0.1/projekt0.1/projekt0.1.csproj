@@ -188,6 +188,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\testimonials.mdf" />
+    <Content Include="App_Data\testimonials_log.ldf">
+      <DependentUpon>testimonials.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\business-frontpage.css" />
@@ -411,9 +415,7 @@
     <Content Include="Views\Accounts\Login.cshtml" />
     <Content Include="Views\Accounts\LoggedIn.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
